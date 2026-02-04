@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kunal's Coding School - Learn programming from industry experts. Master Web Development, Python, Data Science, and more with hands-on projects."
+    />
+    <meta
+      name="keywords"
+      content="coding school, programming courses, web development, python, data science, learn coding, programming institute"
+    />
+    <meta name="author" content="Kunal's Coding School" />
+    <title>Kunal's Coding School - Learn to Code, Build Your Future</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar py-4 px-6">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a
+          href="index.html"
+          class="text-2xl font-bold text-white flex items-center gap-2"
+        >
+          <img src="images/logo.png" alt="Kunal's Coding School" class="h-10 w-auto">
+          <span class="gradient-text hidden sm:inline">Kunal's Coding School</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-6">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="courses.html" class="nav-link">Courses</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="enroll.html" class="btn-primary text-sm">Enroll Now</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu md:hidden">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="enroll.html" class="btn-primary text-center mt-4"
+          >Enroll Now</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center pt-20">
+      <div class="hero-pattern"></div>
+      <div class="max-w-7xl mx-auto px-6 py-20 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="animate-fade-in-left">
+            <span
+              class="inline-block bg-indigo-500/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-medium mb-6"
+            >
+              🚀 Start Your Coding Journey Today
+            </span>
+            <h1
+              class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6"
+            >
+              Learn to Code,<br />
+              <span class="gradient-text">Build Your Future</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+              Master in-demand programming skills with our expert-led courses.
+              From web development to data science, we prepare you for a
+              successful tech career.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="enroll.html" class="btn-primary text-lg">
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+                Enroll Now
+              </a>
+              <a href="courses.html" class="btn-secondary text-lg">
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+                View Courses
+              </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="flex gap-8 mt-12">
+              <div>
+                <div class="text-3xl font-bold text-white">500+</div>
+                <div class="text-gray-400">Students</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-white">15+</div>
+                <div class="text-gray-400">Courses</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-white">95%</div>
+                <div class="text-gray-400">Success Rate</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="animate-fade-in-right hidden md:block">
+            <div class="relative">
+              <div class="glass-card-dark p-6 animate-float">
+                <pre class="text-green-400 text-sm"><code>
+<span class="text-purple-400">function</span> <span class="text-yellow-400">startCoding</span>() {
+  <span class="text-purple-400">const</span> skills = [
+    <span class="text-green-400">'JavaScript'</span>,
+    <span class="text-green-400">'Python'</span>,
+    <span class="text-green-400">'React'</span>
+  ];
+  
+  <span class="text-purple-400">return</span> <span class="text-green-400">'Success! 🎉'</span>;
+}
+              </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="py-20 bg-pattern">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12" data-animate="fade-in-up">
+          <h2 class="section-title">
+            Featured <span class="text-gradient">Courses</span>
+          </h2>
+          <p class="section-subtitle">
+            Explore our most popular courses designed to launch your tech career
+          </p>
+        </div>
+
+        <div
+          id="featured-courses"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Courses loaded dynamically -->
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="courses.html" class="btn-primary">
+            View All Courses
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12" data-animate="fade-in-up">
+          <h2 class="section-title">
+            Why Choose <span class="text-gradient">Us?</span>
+          </h2>
+          <p class="section-subtitle">
+            We provide the best learning experience to help you succeed
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="feature-card" data-animate="fade-in-up">
+            <div class="feature-icon">
+              <svg
+                class="w-8 h-8 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Expert Instructors</h3>
+            <p class="text-gray-600">
+              Learn from industry professionals with years of experience
+            </p>
+          </div>
+
+          <div class="feature-card" data-animate="fade-in-up">
+            <div class="feature-icon">
+              <svg
+                class="w-8 h-8 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Hands-on Projects</h3>
+            <p class="text-gray-600">
+              Build real-world projects to strengthen your portfolio
+            </p>
+          </div>
+
+          <div class="feature-card" data-animate="fade-in-up">
+            <div class="feature-icon">
+              <svg
+                class="w-8 h-8 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Flexible Learning</h3>
+            <p class="text-gray-600">
+              Study at your own pace with lifetime access to materials
+            </p>
+          </div>
+
+          <div class="feature-card" data-animate="fade-in-up">
+            <div class="feature-icon">
+              <svg
+                class="w-8 h-8 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Job Assistance</h3>
+            <p class="text-gray-600">
+              Get placement support and career guidance
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+          Ready to Start Your Coding Journey?
+        </h2>
+        <p class="text-xl text-white/80 mb-8">
+          Join hundreds of students who have transformed their careers with us
+        </p>
+        <a
+          href="enroll.html"
+          class="bg-white text-indigo-600 px-8 py-4 rounded-full font-bold text-lg inline-flex items-center gap-2 hover:shadow-xl transition-all hover:-translate-y-1"
+        >
+          Enroll Today
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+          <div>
+            <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+            <img src="images/logo.png" alt="Logo" class="h-8 w-auto"> Kunal's Coding School
+          </h3>
+            <p class="text-gray-400">
+              Empowering students to become professional developers through
+              quality education.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="courses.html" class="footer-link">Courses</a></li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4">Courses</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="courses.html" class="footer-link">Web Development</a>
+              </li>
+              <li>
+                <a href="courses.html" class="footer-link"
+                  >Python Programming</a
+                >
+              </li>
+              <li>
+                <a href="courses.html" class="footer-link">Data Science</a>
+              </li>
+              <li>
+                <a href="courses.html" class="footer-link">App Development</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4">Contact</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>📧 kunalgurav961@gmail.com</li>
+              <li>📱 +91 98765 43210</li>
+              <li>📍 India</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+          <p>&copy; 2026 Kunal's Coding School. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="#" class="whatsapp-float" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="white">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+  </body>
+</html>
